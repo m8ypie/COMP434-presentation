@@ -169,34 +169,42 @@ img[alt=reactLogo] {
 }
 
 img[alt=react] {
-position: absolute; left: -100px; top: 250px; z-index: -1; width: 1200px; height: 300px
+    width: 1000px; 
+    height: 200px
 }
 img[alt=reactState] {
-position: absolute; left: 150px; top: 250px; z-index: -1; width: 600px; height: 300px
+    width: 600px; 
+    height: 300px
 }
 
 img[alt=seating] {
-    width:969px;
-    height:556px;
-    padding-right: 400px;
+    width:800px;
+    height:400px;
+    padding-right: 600px;
 }
 
 img[alt=redux] {
     width: 541px;
     height:295px;
-    padding-right: 200px;
+    padding-left: 80px;
 }
 
 img[alt=globalState] {
     width: 420px;
     height:510px;
-    padding-right: 200px;
+    padding-left: 130px;
 }
 
 img[alt=dep] {
     width: 856px;
     height:416px;
     padding-right: 200px;
+}
+
+img[alt=webpack] {
+    width: 856px;
+    height:416px;
+    padding-right: 270px;
 }
 /* 
     Specific styles for: .title steps
