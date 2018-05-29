@@ -48,7 +48,7 @@
 # About me
 
 * Did software design and development in Highschool.
-* After my second year I got a Work integrated learning internship with IBM.
+* After my second year at university I got a Work integrated learning internship with IBM.
 * Interned at IBM for two years in the Infrastructure squad (almost entirely back end, infrastructure work).
 * Currently working at a non for profit startup - Humanitix
 
@@ -78,18 +78,99 @@
 * Humanitix currently does not support seating charts
 * Seating charts construction, is a huge frontend task
 * Why not make a seating map module for react?
-    
+</div>
 -----
-<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
+<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-scale="4" data-rel-x="4000" data-rel-y="0">
 # Preamble - What is React, a TLDR.
 * Component based
 * Javascript library
 * Used for building user interfaces
-![Mother Teresa holding a newborn baby](images/react.jpg)
+![reactLogo](images/react.jpg)
+<!--</div>-->
+-----
+<!--<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="3000" data-y="3000" data-z="2000" data-scale="4">-->
+# Preamble - What are props and state?
+* Two types of variables for a component
+* Props are like parameters for a function
+* State are just a collection of variables
+* When state changes the component is re-rendered
+* When new props are passed in, the component is re-rendered
+</div>
+<!--<div id="tilted-slide2" class="step slide markdown" data-rotate="-85" data-x="12000" data-y="3000" data-z="2000" data-scale="2">
+#Props Example
+![react](images/react-code.jpg)
 </div>
 -----
+<div id="tilted-slide3" class="step slide markdown" data-rotate="-85" data-x="15000" data-y="3000" data-z="2000" data-scale="2">
+#State Example
+![reactState](images/react-state.jpg)
+</div>
+------>
+<div id="markdown2" class="step slide markdown" data-rel-x="0" data-rel-y="4000" data-scale="1">
+# Challenges
+-----
+# Challenge: Two types of Javascript API's for 2D rendering
+* Webgl: faster, more capabilities, big library
+* Canvas: smaller library
+-----
+# Solution: PIXI.js
+* Has both a WebGL and Canvas renderer
+* Relatively lightweight
+-----
+# Challenge: I want to focus my development around React components
+-----
+#Solution: ReactPixiFiber 
+* Used for writing PixiJs applications using React declarative style. For react 16 >.
+-----
+#Challenge: How do I model the seating map?
+-----
+#Solution: Redux
+-----
+#What is Redux?
+* Takes state from each separate component
+* Stores the state in a global state
+-----
+#What does this mean?
+* Components can share state
+* Components no longer maintain state
+-----
+![redux](images/redux.png)
+-----
+![globalState](images/global-state.jpg)
+-----
+![seating](images/seating.png)
+-----
+# Challenge: Compiling javascript to browser supported javascript
+* Javascript follows ECMA standard
+* Multiple Javascript versions based on ECMAScript: ES5, ES6 etc...
+* Each browsers support potentially some of the features in any version.
+-----
+# Solution: Babel
+* Javascript transpiler
+* Will take ES6 javascript and transile to what most modern browsers support.
+-----
+# Challenge: I got so many dependencies!
+![dep](images/dep.jpg)
+-----
+# Solution: Webpack
+![dep](images/webpack.png)
+</div>
+<div id="tilted-slide2" class="step slide markdown" data-rotate="-85" data-scale="4" data-rel-x="4000" data-rel-y="0">
+# Whats next?
+* A pure javascript implemntation of seating maps
+* Learn how to place images in impress.js properly...
+-----
+# Links
+* Seating maps github: https://github.com/m8ypie/Seating-Construction
+* Seating maps npm page: https://www.npmjs.com/package/seating-construction
+* This slideshow was made using impress.js: https://github.com/m8ypie/COMP434-presentation
+</div>
+<!--<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="4000" data-y="3000" data-z="2000" data-scale="4">
 # Code
-
+[1,2,3,4,5].map(x => x*2)
+[1,2,3,4,5],map(function (x){
+    return x*2
+})
 When also using [Highlight.js](https://highlightjs.org/) integration, code blocks in Markdown
 are converted to HTML first, then colored by Highlight.js:
 
@@ -106,8 +187,8 @@ are converted to HTML first, then colored by Highlight.js:
                 meta.name = 'viewport';
                 document.head.appendChild(meta);
             }        
-
------
+</div>-->
+<!-------
 
 # Slide separator
 
@@ -118,22 +199,22 @@ are converted to HTML first, then colored by Highlight.js:
 * Attributes from `div.step` element are simply repeated.
   * Better use relative positioning, lest your slides will all be on top of each other.
 * If you need to set some attributes, just use HTML and create a div element, then write 
-  Markdown inside each div.
-</div>
+  Markdown inside each div.-->
+<!--</div>-->
 
-<div id="title-slide" class="step slide title markdown" data-x="2000" data-y="5000">
+<!--<div id="title-slide" class="step slide title markdown" data-x="2000" data-y="5000">
 # Title slide
 ## This slide has different CSS class than the previous ones
-</div>
+</div>-->
 
 
-<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
+<!--<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
 # Simplicity of Markdown & Full power of Impress.js
   
 * This slide sets its own `rotate`, `x`, `y`, and even `z` coordinates
 * Note that the Mother Teresa slide earlier was pimped with some custom CSS, all the while
   the content was written in simple Markdown.
-</div>
+</div>-->
 
 <script type="text/javascript">
 var enableBwCss = function(){
@@ -161,7 +242,7 @@ var disableEffectsCss = function(){
 </script>
 
 
-<div id="js-slide" class="step slide" data-rotate="0" data-x="4000" data-y="5000">
+<!--<div id="js-slide" class="step slide" data-rotate="0" data-x="4000" data-y="5000">
 <h1>CSS &amp; JavaScript magic</h1>
 
 <p>Just to emphasize my point, this last slide allows you to use a JavaScript powered menu to
@@ -173,7 +254,7 @@ toggle the CSS style:</p>
 
 <p>Simplicity of Markdown married with full power of Impress.js!</p>
 
-</div>
+</div>-->
 
 
 <div id="overview" class="step" data-x="5000" data-y="4000" data-scale="10" style="pointer-events: none;" data-rotate="5">
